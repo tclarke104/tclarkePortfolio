@@ -1,0 +1,10 @@
+@import '../shared/styles/app/variables';
+
+.content-wrapper{
+  padding-left: $aside-wd + 20;
+  padding-top: $aside-wd-collapsed;
+
+}
+
+.content-wrapper-collapsed {
+}

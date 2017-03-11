@@ -1,0 +1,23 @@
+@import '../../../shared/styles/app/variables.scss';
+@import '../../../shared/styles/app/media-queries.scss';
+.work-container {
+    margin: 0 auto;
+    max-width: $container-lg;
+    .work-logo {
+        width: 240px;
+    }
+    .work-text {
+        @media only screen and (max-width: $mq-tablet) {
+            text-align: center;
+        }
+    }
+    .panel-title {
+      padding-left:5rem;
+    }
+    .panel-body {
+      padding: 1rem 5rem 1rem 8rem
+    }
+    .image-work {
+      max-height:20rem
+    }
+}

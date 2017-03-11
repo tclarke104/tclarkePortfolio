@@ -1,0 +1,14 @@
+@import '../../../shared/styles/app/variables.scss';
+@import '../../../shared/styles/app/media-queries.scss';
+.leadership-container {
+    margin: 0 auto;
+    max-width: $container-md;
+    .leadership-logo {
+        width: 240px;
+    }
+    .leadership-text {
+        @media only screen and (max-width: $mq-tablet) {
+            text-align: center;
+        }
+    }
+}

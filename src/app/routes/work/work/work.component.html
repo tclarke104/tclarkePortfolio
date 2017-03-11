@@ -1,0 +1,22 @@
+<div class="work-container">
+  <div class="jumbotron">
+    <div class="row">
+      <h1 class="text-center">
+        WORK
+      </h1>
+    </div>
+  </div>
+  <div class="jumbotron" *ngFor="let workExperience of workExperiences">
+    <div class="row">
+      <div class="panel-title">
+        <span>{{workExperience.title}}</span> | <span>{{workExperience.employer}}</span> | <span>{{workExperience.dates}}</span>
+      </div>
+      <div class="panel-body">
+        <span>{{workExperience.description}}</span>
+      </div>
+      <div *ngIf="workExperience.imgUrl">
+        <img src="{{workExperience.imgUrl}}" class="image-work">
+      </div>
+    </div>
+  </div>
+</div>
